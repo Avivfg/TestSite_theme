@@ -1,6 +1,8 @@
 <div class="import-saved-cart">
   {% if customer %}
-    <h2>Hello, {{ customer.first_name }}!</h2>
+    <h2>Dear {{ customer.first_name }}, click here for retrieving your saved cart</h2>
+  {% else %}
+    <h2>Dear customer, in order to use the saved cart features, please login</h2>
   {% endif %}
   <h2>{{ section.settings.custom_text_title }}</h2>
   <div>{{ section.settings.custom_text_body }}</div>
