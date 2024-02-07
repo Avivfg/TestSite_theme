@@ -1,0 +1,30 @@
+<div class="import-saved-cart">
+  <h2> {{ section.settings.custom_text_title }} </h2>
+  <div>{{ section.settings.custom_text_body }}</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Text Box",
+    "settings": [
+      {
+        "id": "custom_text_title",
+        "type": "text",
+        "label": "Text box heading",
+        "default": "Title"
+      },
+      {
+        "id": "custom_text_body",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>This feature will allow your registered customers to save and retrieve their cart.\nThe import-saved-cart section should have two states:\n1. For logged in customers it should offer retrieving a saved cart (text + button).\n2. For not logged in customers it notes that if you want to make use of this feature you should login.\nThe section should offer the following customizations:\n1. Dynamic text content.\n2. Dynamic background color.\n3. Dynamic text color.</p>"
+      }
+    ],
+    "presets": [
+      {
+        "name": "import-saved-cart",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
