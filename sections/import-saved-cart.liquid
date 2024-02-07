@@ -1,4 +1,5 @@
 <div class="import-saved-cart">
+  <h2> {{ section.settings.test }} </h2>
   <h2> {{ section.settings.custom_text_title }} </h2>
   <div>{{ section.settings.custom_text_body }}</div>
 </div>
@@ -7,6 +8,12 @@
   {
     "name": "Text Box",
     "settings": [
+      {
+        "id": "test",
+        "type": "text",
+        "label": "Text box heading",
+        "default": "You made it!"
+      },
       {
         "id": "custom_text_title",
         "type": "text",
