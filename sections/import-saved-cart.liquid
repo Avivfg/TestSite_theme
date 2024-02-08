@@ -3,8 +3,9 @@
     <h2>Dear {{ customer.first_name }}, click here for retrieving your saved cart</h2>
   {% else %}
     <h2>Dear customer, in order to use the saved cart features, please login</h2>
-  {% assign button_text = "Import Saved Cart" %}
-  <button id="myButton" onclick="importSavedCart()">{{ button_text }}</button>
+  <!-- {% assign button_text = "Import Saved Cart" %} -->
+    <!-- <button id="myButton" onclick="importSavedCart()">{{ button_text }}</button> -->
+    <a href="{{ section.settings.link }}" class="button">{{ section.settings.linktext }}</a>
   {% endif %}
   <h2>{{ section.settings.custom_text_title }}</h2>
   <div>{{ section.settings.custom_text_body }}</div>
